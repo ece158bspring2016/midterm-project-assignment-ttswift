@@ -10,9 +10,17 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    
+    let yaks = ["Getting Started with building a Yik Yak Clone in Swift","Xcode 6 Tutorial using Autolayouts",
+                "In this tutorial you will also learn how to talk to Parse Backend", "Learning Swift by building real world applications", "Subscribe to get more info"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.estimatedRowHeight = 600
+        //self.tableView.rowHeight = UITableViewAutomaticDimension
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +37,40 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.yaks.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! TableViewCell
+        
+        cell.yakText.text = yaks[indexPath.row]
+        cell.count.text = "\((indexPath.row + 1) * 5)"
+   //     cell.time.text = "\((indexPath.row + 1) * 3)m ago"
+        cell.replies.text = "\((indexPath.row + 1) * 1) replies"
 
-        // Configure the cell...
 
         return cell
     }
-    */
+    
+    
+    @IBAction func topButton(sender: AnyObject) {
+        let hitPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+        let hitIndex = self.tableView.indexPathForRowAtPoint(hitPoint)
+        
+        NSLog("Top Index Path \(hitIndex?.row)")
+    }
+    
+    @IBAction func bottomButton(sender: AnyObject) {
+        let hitPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+        let hitIndex = self.tableView.indexPathForRowAtPoint(hitPoint)
+        NSLog("Bottom Index Path \(hitIndex?.row)")
+    }
 
     /*
     // Override to support conditional editing of the table view.

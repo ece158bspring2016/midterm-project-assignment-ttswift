@@ -10,6 +10,12 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var yakText: UILabel!
+    
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var count: UILabel!
+    @IBOutlet weak var replies: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
