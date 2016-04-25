@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F51429D63AC5751EFDC644C /* Pods_midtermYikYak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E22741513848977F636532 /* Pods_midtermYikYak.framework */; };
 		6E73EDD51CCAEE4F0076B71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73EDD41CCAEE4F0076B71A /* AppDelegate.swift */; };
 		6E73EDD71CCAEE4F0076B71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73EDD61CCAEE4F0076B71A /* ViewController.swift */; };
 		6E73EDDA1CCAEE4F0076B71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E73EDD81CCAEE4F0076B71A /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00FAA97BBE3C48355C779113 /* Pods-midtermYikYak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-midtermYikYak.release.xcconfig"; path = "Pods/Target Support Files/Pods-midtermYikYak/Pods-midtermYikYak.release.xcconfig"; sourceTree = "<group>"; };
 		6E73EDD11CCAEE4F0076B71A /* midtermYikYak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midtermYikYak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E73EDD41CCAEE4F0076B71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E73EDD61CCAEE4F0076B71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		6E73EDF31CCAF2580076B71A /* up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@3x.png"; sourceTree = "<group>"; };
 		6E73EDFE1CCAF6310076B71A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6E73EE001CCAF6550076B71A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7B9869CBC1DEA6481AA72BD8 /* Pods-midtermYikYak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-midtermYikYak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-midtermYikYak/Pods-midtermYikYak.debug.xcconfig"; sourceTree = "<group>"; };
+		C0E22741513848977F636532 /* Pods_midtermYikYak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_midtermYikYak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,18 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F51429D63AC5751EFDC644C /* Pods_midtermYikYak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3014B8FA6EC29DE092B52C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B9869CBC1DEA6481AA72BD8 /* Pods-midtermYikYak.debug.xcconfig */,
+				00FAA97BBE3C48355C779113 /* Pods-midtermYikYak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6E73EDC81CCAEE4E0076B71A = {
 			isa = PBXGroup;
 			children = (
 				6E73EDD31CCAEE4F0076B71A /* midtermYikYak */,
 				6E73EDD21CCAEE4F0076B71A /* Products */,
 				6E73EDE61CCAF2330076B71A /* assets */,
+				2F3014B8FA6EC29DE092B52C /* Pods */,
+				D65ECF9E830AF7408DC93742 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +149,14 @@
 			path = up;
 			sourceTree = "<group>";
 		};
+		D65ECF9E830AF7408DC93742 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E22741513848977F636532 /* Pods_midtermYikYak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E73EDE31CCAEE4F0076B71A /* Build configuration list for PBXNativeTarget "midtermYikYak" */;
 			buildPhases = (
+				E10CB58126757213B5A93976 /* Check Pods Manifest.lock */,
 				6E73EDCD1CCAEE4F0076B71A /* Sources */,
 				6E73EDCE1CCAEE4F0076B71A /* Frameworks */,
 				6E73EDCF1CCAEE4F0076B71A /* Resources */,
+				567F869E3EF7EB6B9D50EF9D /* Embed Pods Frameworks */,
+				488589F01BBADF332B67B3CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +236,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		488589F01BBADF332B67B3CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-midtermYikYak/Pods-midtermYikYak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567F869E3EF7EB6B9D50EF9D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-midtermYikYak/Pods-midtermYikYak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10CB58126757213B5A93976 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E73EDCD1CCAEE4F0076B71A /* Sources */ = {
@@ -331,6 +406,7 @@
 		};
 		6E73EDE41CCAEE4F0076B71A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B9869CBC1DEA6481AA72BD8 /* Pods-midtermYikYak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = midtermYikYak/Info.plist;
@@ -342,6 +418,7 @@
 		};
 		6E73EDE51CCAEE4F0076B71A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FAA97BBE3C48355C779113 /* Pods-midtermYikYak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = midtermYikYak/Info.plist;
@@ -370,6 +447,7 @@
 				6E73EDE51CCAEE4F0076B71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
